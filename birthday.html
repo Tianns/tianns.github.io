@@ -139,7 +139,7 @@
                 let totalPopups = 0;
                 
                 // 从外到内创建每一圈（先最外圈，再内圈）
-                for(let ring = rings - 1; ring >= 0; ring--) {
+                for(let ring = 0; ring < rings; ring++) {
                     const radius = startRadius + (ring * radiusIncrement);
                     
                     // 在当前圈上创建弹窗，从左边开始严格逆时针方向
